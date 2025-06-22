@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מערכת 1 - יעילות כיבוש שערים</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #2a5298, #1e3c72);
+            color: #fff;
+            line-height: 1.6;
+            direction: rtl;
+        }
+        header {
+            background: linear-gradient(90deg, #ff8e53, #ff6b6b);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .section p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .back-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #00c4cc, #7d3cff);
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: transform 0.3s;
+        }
+        .back-button:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #1e3c72;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>מערכת 1 - יעילות כיבוש שערים במשחק בית וחוץ</h1>
+    </header>
+    <div class="container">
+        <section class="section">
+            <h2>ניתוח יעילות כיבוש שערים</h2>
+            <p>מערכת זו מציגה ניתוח מפורט של יעילות כיבוש שערים במשחקי בית וחוץ, תוך השוואה בין קבוצות ושחקנים. התרשים שלהלן ממחיש את ההבדלים בביצועים בהתאם למקום המשחק.</p>
+            <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+            <tableau-viz 
+                id="tableauViz"
+                src="https://public.tableau.com/views/1_17506224287290/Dashboard1"
+                toolbar="bottom"
+                hide-tabs
+                width="100%"
+                height="800">
+            </tableau-viz>
+            <a href="index.html" class="back-button">חזור לדף הראשי</a>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 מערכת סטטיסטיקות כדורגל. כל הזכויות שמורות.</p>
+    </footer>
+</body>
+</html>

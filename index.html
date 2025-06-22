@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מערכת סטטיסטיקות כדורגל</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            line-height: 1.6;
+            direction: rtl;
+        }
+        header {
+            background: linear-gradient(90deg, #ff6b6b, #ff8e53);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .intro p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .button {
+            background: linear-gradient(45deg, #00c4cc, #7d3cff);
+            color: #fff;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+        }
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #1e3c72;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>מערכת סטטיסטיקות כדורגל</h1>
+        <p>מערכת ויזואליזציה מתקדמת לניתוח נתוני כדורגל</p>
+    </header>
+    <div class="container">
+        <div class="intro">
+            <p>ברוכים הבאים למערכת סטטיסטיקות כדורגל, פתרון חדשני לניתוח ויזואלי של נתוני כדורגל. המערכת מאפשרת ניתוח מעמיק של ביצועי שחקנים וקבוצות במגוון היבטים, כולל יעילות כיבוש שערים, יחס בעיטות לשערים לפי עמדות, ומאמץ פיזי של שחקנים פותחים ומחליפים. המטרה היא לספק תובנות מדויקות למאמנים, אנליסטים ואוהדים.</p>
+        </div>
+        <div class="buttons">
+            <a href="dash1.html" class="button">מערכת 1 - יעילות כיבוש שערים במשחק בית וחוץ</a>
+            <a href="dash2.html" class="button">מערכת 2 - יחס בעיטות לשערים לפי עמדה ושחקן</a>
+            <a href="dash3.html" class="button">מערכת 3 - מאמץ פיזי של שחקן פותח ומחליף</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 מערכת סטטיסטיקות כדורגל. כל הזכויות שמורות.</p>
+    </footer>
+    <script>
+        document.querySelectorAll('.button').forEach(button => {
+            button.addEventListener('click', () => {
+                button.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    button.style.transform = 'scale(1)';
+                }, 200);
+            });
+        });
+    </script>
+</body>
+</html>
